@@ -17,6 +17,13 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        //funciono?
+        addObject (new ConstructorTerran(), 100, getHeight() / 2);
+        addObject (new GerreroTerran(), 200, getHeight() / 2);
+        addObject (new MedicoTerran(), 300, getHeight() / 2);
+       addObject (new ConstructorZerg(), 400, getHeight() / 2);
+       addObject (new GerreroZerg(), 500, getHeight() / 2);
+       addObject (new MedicoTerran(), 600, getHeight() / 2);
+        
+   
     }
 }

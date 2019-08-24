@@ -14,6 +14,5 @@ public class ConstructorTerran extends Terran
      */
     public void act() 
     {
-       
     }    
 }
