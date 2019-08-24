@@ -23,6 +23,15 @@ public class MyWorld extends World
        addObject (new ConstructorZerg(),700, getHeight() / 7);
        addObject (new GerreroZerg(), 710, getHeight() / 7);
        addObject (new MedicoZerg(), 720, getHeight() / 7);
+       addObject (new Roca(), 444, getHeight() / 3);
+        addObject (new Tronco(), 200, getHeight() / 4);
+        addObject (new Roca(), 367, getHeight() / 2);
+        addObject (new Tronco(), 745, getHeight() / 6);
+        addObject (new Roca(), 600, getHeight() / 7);
+        addObject (new Tronco(), 344, getHeight() / 5);
+        
+        
+       
         
    
     }

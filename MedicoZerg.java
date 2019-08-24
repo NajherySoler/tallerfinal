@@ -47,6 +47,9 @@ public class MedicoZerg extends Zerg
        if (isTouching(GerreroTerran.class)||isTouching(ConstructorTerran.class)||isTouching(MedicoTerran.class)){
            posX = -posX;
         }
+        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+            posX = -posX;
+    }
     }
 }
 

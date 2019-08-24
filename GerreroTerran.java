@@ -47,8 +47,12 @@ public class GerreroTerran extends Terran
        if (isTouching(GerreroZerg.class)||isTouching(ConstructorZerg.class)||isTouching(MedicoZerg.class)){
            posX = -posX;
         }
+    if(isTouching(Roca.class)||isTouching(Tronco.class)){
+            posX = -posX;
     }
 }
+}
+
 
   
   

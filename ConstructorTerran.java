@@ -50,6 +50,9 @@ public class ConstructorTerran extends Terran
            posX = -posX;
           
         }
+        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+            posX = -posX;
+    }
     }
 }
        

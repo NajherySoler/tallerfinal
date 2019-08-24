@@ -48,6 +48,15 @@ public class MedicoTerran extends Terran
            posX = -posX;
         }
     }
+    private void estaChocandoObjetos(){
+           if (isTouching(Obstaculo.class)){
+           posX = -posX;
+          
+        }
+        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+            posX = -posX;
+    }
+    }
 }
 
   
