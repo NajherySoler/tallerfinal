@@ -14,6 +14,6 @@ public class MedicoTerran extends Terran
      */
     public void act() 
     {
-        // Add your action code here.
+       move(5);
     }    
 }
