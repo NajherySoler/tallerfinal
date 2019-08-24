@@ -22,7 +22,7 @@ public class MyWorld extends World
         addObject (new MedicoTerran(), 300, getHeight() / 2);
        addObject (new ConstructorZerg(), 400, getHeight() / 2);
        addObject (new GerreroZerg(), 500, getHeight() / 2);
-       addObject (new MedicoTerran(), 600, getHeight() / 2);
+       addObject (new MedicoZerg(), 600, getHeight() / 2);
         
    
     }
