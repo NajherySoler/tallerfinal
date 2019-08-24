@@ -14,6 +14,6 @@ public class GerreroTerran extends Terran
      */
     public void act() 
     {
-        // Add your action code here.
+        move(4);// Add your action code here.
     }    
 }
