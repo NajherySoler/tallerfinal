@@ -17,12 +17,12 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        addObject (new ConstructorTerran(), 100, getHeight() / 2);
-        addObject (new GerreroTerran(), 200, getHeight() / 2);
-        addObject (new MedicoTerran(), 300, getHeight() / 2);
-       addObject (new ConstructorZerg(), 400, getHeight() / 2);
-       addObject (new GerreroZerg(), 500, getHeight() / 2);
-       addObject (new MedicoZerg(), 600, getHeight() / 2);
+        addObject (new ConstructorTerran(), 50, getHeight() / 7);
+        addObject (new GerreroTerran(), 60, getHeight() / 7);
+        addObject (new MedicoTerran(), 70, getHeight() / 7);
+       addObject (new ConstructorZerg(),700, getHeight() / 7);
+       addObject (new GerreroZerg(), 710, getHeight() / 7);
+       addObject (new MedicoZerg(), 720, getHeight() / 7);
         
    
     }
