@@ -29,7 +29,8 @@ public class MyWorld extends World
         addObject (new Tronco(), 745, getHeight() / 6);
         addObject (new Roca(), 600, getHeight() / 7);
         addObject (new Tronco(), 344, getHeight() / 5);
-        
+          addObject (new Cofres(), 100, getHeight() / 7);
+        addObject (new Diamante(), 300, 500);
         
        
         
