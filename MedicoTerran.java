@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MedicoTerran here.
+ * Write a description of class GerreroTerran here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -9,16 +9,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MedicoTerran extends Terran
 {
     /**
-     * Act - do whatever the MedicoTerran wants to do. This method is called whenever
+     * Act - do whatever the GerreroTerran wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-   private int posX;         
+      private int posX;         
       private int posY;  
       
      public MedicoTerran()
     {
-        posX = 6;
-        posY = 6;
+        posX = 4;
+        posY = 4;
          getImage().scale(getImage().getWidth()/20,getImage().getHeight()/20);
     }
     
@@ -48,16 +48,10 @@ public class MedicoTerran extends Terran
        if (isTouching(GerreroZerg.class)||isTouching(ConstructorZerg.class)||isTouching(MedicoZerg.class)){
            posX = -posX;
         }
-    }
-    private void estaChocandoObjetos(){
-           if (isTouching(Obstaculo.class)){
-           posX = -posX;
-          
-        }
-        if(isTouching(Roca.class)||isTouching(Bomba.class)){
+    if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
     }
-    }
+}
 }
 
   
