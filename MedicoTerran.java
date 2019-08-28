@@ -19,6 +19,7 @@ public class MedicoTerran extends Terran
     {
         posX = 6;
         posY = 6;
+         getImage().scale(getImage().getWidth()/20,getImage().getHeight()/20);
     }
     
     public void act() 
@@ -53,7 +54,7 @@ public class MedicoTerran extends Terran
            posX = -posX;
           
         }
-        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+        if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
     }
     }

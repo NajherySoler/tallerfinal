@@ -19,6 +19,7 @@ public class GerreroTerran extends Terran
     {
         posX = 4;
         posY = 4;
+         getImage().scale(getImage().getWidth()/20,getImage().getHeight()/20);
     }
     
     public void act() 
@@ -47,7 +48,7 @@ public class GerreroTerran extends Terran
        if (isTouching(GerreroZerg.class)||isTouching(ConstructorZerg.class)||isTouching(MedicoZerg.class)){
            posX = -posX;
         }
-    if(isTouching(Roca.class)||isTouching(Tronco.class)){
+    if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
     }
 }

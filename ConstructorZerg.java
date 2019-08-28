@@ -19,6 +19,7 @@ public class ConstructorZerg extends Zerg
     {
         posX = 7;
         posY = 7;
+         getImage().scale(getImage().getWidth()/20,getImage().getHeight()/20);
     }
     
     public void act() 
@@ -47,7 +48,7 @@ public class ConstructorZerg extends Zerg
        if (isTouching(GerreroTerran.class)||isTouching(ConstructorTerran.class)||isTouching(MedicoTerran.class)){
            posX = -posX;
         }
-        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+        if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
     }
     }

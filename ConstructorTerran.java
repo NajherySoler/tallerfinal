@@ -14,12 +14,13 @@ public class ConstructorTerran extends Terran
      */
       private int posX;         
       private int posY;  
-          
+    
     
     public ConstructorTerran()
     {
         posX = 5;
         posY = 5;
+         getImage().scale(getImage().getWidth()/20,getImage().getHeight()/20);
     }
     
     public void act() 
@@ -50,7 +51,7 @@ public class ConstructorTerran extends Terran
            posX = -posX;
           
         }
-        if(isTouching(Roca.class)||isTouching(Tronco.class)){
+        if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
     }
     }

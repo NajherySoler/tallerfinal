@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -12,6 +13,9 @@ public class Diamante extends Bonus
      * Act - do whatever the Diamante wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+     public Diamante(){
+        getImage().scale(getImage().getWidth()/14,getImage().getHeight()/14);
+    }
     public void act() 
     {
         // Add your action code here.
