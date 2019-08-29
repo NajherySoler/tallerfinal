@@ -1,22 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
 /**
- * Write a description of class Terran here.
+ * Write a description of class Inerte here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Terran extends Persona
+public class Inerte extends Actor
 {
-    VidaBarTerran vida=new VidaBarTerran();
-    boolean touchingZerg=false;
     /**
-     * Act - do whatever the Terran wants to do. This method is called whenever
+     * Act - do whatever the Inerte wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
         // Add your action code here.
     }    
-    
-
 }

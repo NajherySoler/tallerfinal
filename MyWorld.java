@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -8,15 +8,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+      VidaBarTerran vida=new VidaBarTerran();
+      VidaBarZerg vida2=new VidaBarZerg();
+      
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
+    public VidaBarTerran getVidaBar(){
+        return vida;
+    }
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
+        
         addObject (new ConstructorTerran(), 50, getHeight() / 7);
         addObject (new GerreroTerran(), 60, getHeight() / 7);
         addObject (new MedicoTerran(), 70, getHeight() / 7);
@@ -31,8 +37,8 @@ public class MyWorld extends World
         addObject (new Bomba(), 344, getHeight() / 5);
           addObject (new Cofres(), 100, getHeight() / 7);
         addObject (new Diamante(), 300, 500);
-        
-       
+        addObject (new VidaBarTerran(), 50, getHeight() /15);
+        addObject (new VidaBarZerg(), 710, getHeight() /15);
         
    
     }

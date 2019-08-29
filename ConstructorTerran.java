@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ConstructorTerran extends Terran
 {
+    public int energia=100;
+   
     /**
      * Act - do whatever the ConstructorTerran wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -47,12 +49,22 @@ public class ConstructorTerran extends Terran
     }
     
      private void estaChocando(){
-       if (isTouching(GerreroZerg.class)||isTouching(ConstructorZerg.class)||isTouching(MedicoZerg.class)){
-           posX = -posX;
+       if (isTouching(Zerg.class)){
+           posX =-posX;
+           try{
+           energia=energia-20;
+           if(energia<=0){
+           getWorld().removeObject(this);            }
+        }
+        catch(Exception e){
           
+        }
         }
         if(isTouching(Roca.class)||isTouching(Bomba.class)){
             posX = -posX;
+    }
+    if(isTouching(MedicoTerran.class)){
+            energia=energia+20;
     }
     }
 }

@@ -6,7 +6,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Obstaculo extends Actor
+public class Obstaculo extends Inerte
+
 {
     /**
      * Act - do whatever the Obstaculo wants to do. This method is called whenever

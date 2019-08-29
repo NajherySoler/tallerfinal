@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bonus extends Actor
+public class Bonus extends Inerte
 {
     /**
      * Act - do whatever the Bonus wants to do. This method is called whenever
